@@ -128,9 +128,16 @@ a {
   color: black;
 }
 
+/* adjusts transparency over an image*/
+a:hover{
+  opacity: 0.75
+}
+
+/* negates opacity attribute on a:hover for nav bar*/
 h5:hover {
   padding: 10px;
   background-color: lightgrey;
+  opacity: 1.0;
 }
 
 p {
