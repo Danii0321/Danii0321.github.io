@@ -52,14 +52,16 @@ h5{
 #box {
   background-color: white;
   height: 110px;
+  width: auto;
 }
 
 #box2 {
   background-color: white;
-  margin-left: 373px;
   width: 780px;
   height: 500px;
   margin-top: 55px;
+  float: right;
+  margin-right: 190;
 }
 
 #profilebox {
@@ -71,7 +73,8 @@ h5{
   margin-left: 250px;
   background-color: #FFE300;
   height: 200px;
-  width: 3%;
+  width: 50px;
+  float: left;
 }
 
 #box4 {
@@ -94,6 +97,13 @@ h5{
   align-self: center;
 }
 
+#infoBox{
+  background-color: white;
+  margin-left: 200px;
+  margin-top: 200px;
+  width: 450px;
+  float: left;
+}
 /* element modification*/
 button {
   background-color: #FFE300;
@@ -116,9 +126,7 @@ li {
 a:link {
   color: black;
   display: block;
-  padding: 8px;
-  padding-left: 20px;
-  padding-right: 20px;
+
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -150,14 +158,17 @@ p {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 350px;
-  margin-top: -200px;
+  float: right;
 }
 
 
 /* Create equal columns that sit next to each other */
 .column {
   width: 500px;
+}
+
+.columnLittle {
+  width: 200px;
 }
 
 .column img {
