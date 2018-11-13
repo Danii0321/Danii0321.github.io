@@ -164,7 +164,8 @@ p {
 
 /* Create equal columns that sit next to each other */
 .column {
-  width: 500px;
+  width: 475px;
+  margin-bottom: 50px;
 }
 
 .columnLittle {
@@ -174,6 +175,7 @@ p {
 .column img {
   margin-top: 0px;
   vertical-align: middle;
+  margin-bottom: 50px;
 }
 
 .rotate {
