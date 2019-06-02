@@ -53,6 +53,7 @@ h5{
   background-color: white;
   height: 110px;
   width: auto;
+  min-width: 1000px;
 }
 
 #box2 {
@@ -159,6 +160,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   float: right;
+  min-width: 400px;
 }
 
 
