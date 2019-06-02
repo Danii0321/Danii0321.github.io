@@ -1,6 +1,6 @@
 
 body {
-  background-image: url("tiny_grid.png");
+  background-image: url("images/tiny_grid.png");
 }
 
 /* text and title formatting */
@@ -112,7 +112,6 @@ button {
 ul {
   list-style-type: none;
   align-self: right;
-  font-size: 100%;
   margin-right: 50px;
   margin-top: -10px;
 }
@@ -122,6 +121,7 @@ li {
   display: inline;
   color: black;
   height: 50px;
+  padding: 10px;
 }
 
 a:link {
@@ -143,8 +143,7 @@ a:hover{
 }
 
 /* negates opacity attribute on a:hover for nav bar*/
-h5:hover {
-  padding: 10px;
+li:hover {
   background-color: lightgrey;
   opacity: 1.0;
 }
@@ -160,13 +159,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   float: right;
-  min-width: 400px;
+  min-width: 200px;
 }
 
 
 /* Create equal columns that sit next to each other */
 .column {
-  width: 474px;
+  width: 350px;
   margin-bottom: 50px;
 }
 
