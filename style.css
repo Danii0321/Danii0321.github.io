@@ -20,8 +20,6 @@ h2{
   font-size: 150%;
   font-weight: bold;
   align: left;
-  margin-top: 115px;
-  padding-top: 10px;
 }
 
 h3{
@@ -52,6 +50,7 @@ h5{
 /* Boxes and Containers */
 #box {
   background-color: white;
+
   height: 110px;
   width: auto;
   min-width: 1000px;
@@ -63,19 +62,25 @@ h5{
   height: 500px;
   margin-top: 55px;
   float: right;
-  margin-right: 190;
+
 }
 
 #profilebox {
-  margin-left: 250px;
+
   margin-top: 55px;
 }
 
+#sidebox{
+  margin-left: 305px;
+  height: 75px;
+  width: 200px;
+  float: left;
+}
+
 #box3 {
-  margin-left: 250px;
   background-color: #FFE300;
-  height: 200px;
-  width: 50px;
+  height: 25px;
+  width: 250px;
   float: left;
 }
 
@@ -87,24 +92,26 @@ h5{
 
 #box5 {
   background-color: white;
-  margin-left: 500px;
+  margin-left: 200px;
   margin-top: -220px;
   width: 780px;
   height: 400px;
 }
 
-#centerbox {
-  width: 50%;
-  height: auto;
-  align-self: center;
-}
 
 #infoBox{
   background-color: white;
-  margin-left: 30px;
+  margin-left: 25px;
   width: 650px;
   float: left;
 }
+
+#rowcolbox{
+  margin-left: 350px;
+  float: left;
+}
+
+
 /* element modification*/
 button {
   background-color: #FFE300;
@@ -167,16 +174,19 @@ p {
 .column {
   width: 350px;
   margin-bottom: 50px;
+  position: relative;
 }
 
 .columnLittle {
   width: 200px;
+  position: relative;
 }
 
 .column img {
   margin-top: 0px;
   vertical-align: middle;
   margin-bottom: 50px;
+  position: relative;
 }
 
 .rotate {
