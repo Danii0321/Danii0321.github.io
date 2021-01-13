@@ -1,174 +1,60 @@
+html, body {
+margin:0;
+padding:0;
+}
 
 body {
-  /*background image */
-  background-image: url("images/grid.png");
+ background-image: url("images/grid.png");
 }
 
-/* text and title formatting */
 h1 {
-  color: black;
-  margin-left: 50px;
-  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-family: 'Mosk Semi-Bold 600';
+  src: url('fonts/Mosk Semi-Bold 600.ttf');
   font-size: 100%;
-  font-weight: bold;
-  font-size: 18pt;
-}
-
-h2{
-  color: black;
-  font-family: 'Roboto', sans-serif;
-  font-size: 150%;
-  font-weight: bold;
-  align: left;
-}
-
-h3{
-  color: black;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 150%;
-  font-weight: bold;
-  align: left;
-  padding-top: 12px;
-  padding-bottom: 1px;
-  padding-left: 20px;
-}
-
-h4{
-  color: black;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 100%;
-  font-weight: bold;
-  align: left;
-}
-
-h5{
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 99%;
-  padding-bottom: 15px;
-}
-
-/* Boxes and Containers */
-#box {
-  background-color: white;
-
-  height: 110px;
-  width: auto;
-  min-width: 1000px;
-}
-
-#box2 {
-  background-color: white;
-  width: 780px;
-  height: 500px;
-  margin-top: 55px;
-  float: right;
-
-}
-
-#profilebox {
-
-  margin-top: 55px;
-}
-
-#sidebox{
-  margin-left: 305px;
-  height: 75px;
-  width: 200px;
+  font-size: 20pt;
   float: left;
 }
 
-#box3 {
-  background-color: #FFE300;
-  height: 25px;
-  width: 250px;
-  float: left;
-}
-
-#box4 {
-  background-color: #FFE300;
-  height: 40px;
-  width: 200px;
-}
-
-#box5 {
-  background-color: white;
-  margin-left: 200px;
-  margin-top: -220px;
-  width: 780px;
-  height: 400px;
-}
-
-
-#infoBox{
-  background-color: white;
-  margin-left: 25px;
-  width: 650px;
-  float: left;
-}
-
-#rowcolbox{
-  margin-left: 350px;
-  float: left;
-}
-
-
-/* element modification*/
-button {
-  background-color: #FFE300;
-}
 ul {
   list-style-type: none;
   align-self: right;
-  margin-right: 50px;
-  margin-top: -10px;
+  margin: 0;
+  padding: 0;
+  padding-right: 100px
 }
 
 li {
   float: right;
   display: inline;
-  color: black;
-  height: 50px;
-  padding: 10px;
 }
 
-a:link {
-  color: black;
+li a {
+  font-family: 'Mosk Semi-Bold 600';
+  src: url('fonts/Mosk Semi-Bold 600.ttf');
+  font-size: 14pt;
   display: block;
-
+  color: white;
+  padding-left: 20px;
+  text-align: center;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
 }
 
-a {
-  color: black;
-}
 
-/* adjusts transparency over an image*/
-a:hover{
-  opacity: 0.75
-}
-
-/* negates opacity attribute on a:hover for nav bar*/
-li:hover {
-  background-color: lightgrey;
-  opacity: 1.0;
-}
-
-p {
-  margin-left: 25px;
-  margin-right: 25px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 100%;
+#header {
+  background-color: black;
+  height: 90px;
+  width: auto;
+  padding-left: 100px;
+  padding-top: 20px;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  float: right;
+  justify-content: center;
   min-width: 200px;
 }
-
 
 /* Create equal columns that sit next to each other */
 .column {
@@ -177,61 +63,9 @@ p {
   position: relative;
 }
 
-.columnLittle {
-  width: 200px;
-  position: relative;
-}
-
 .column img {
   margin-top: 0px;
   vertical-align: middle;
   margin-bottom: 50px;
   position: relative;
-}
-
-.rotate {
-  webkit-transform: rotate(270deg);
-      -webkit-transform-origin: left top;
-      -moz-transform: rotate(270deg);
-      -moz-transform-origin: left top;
-      -ms-transform: rotate(270deg);
-      -ms-transform-origin: left top;
-      -o-transform: rotate(270deg);
-      -o-transform-origin: left top;
-      transform: rotate(270deg);
-      transform-origin: left top;
-}
-
-/* (modified) code source: https://www.w3schools.com/howto/howto_css_contact_form.asp*/
-/* Style inputs with type="text" */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #FFE300;
-    color: black;
-    padding: 12px 30px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 80%;
-    cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: lightgrey;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-    border-radius: 5px;
-    background-color: white;
-    padding: 20px;
 }
