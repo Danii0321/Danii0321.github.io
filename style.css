@@ -8,9 +8,8 @@ body {
 }
 
 h1 {
-  color: white;
-  font-family: 'Mosk Semi-Bold 600';
-  src: url('fonts/Mosk Semi-Bold 600.ttf');
+  color: black;
+  font-family: 'Fjalla One', sans-serif;
   font-size: 100%;
   font-size: 20pt;
   float: left;
@@ -30,11 +29,10 @@ li {
 }
 
 li a {
-  font-family: 'Mosk Semi-Bold 600';
-  src: url('fonts/Mosk Semi-Bold 600.ttf');
+  font-family: 'Source Sans Pro';
   font-size: 14pt;
   display: block;
-  color: white;
+  color: black;
   padding-left: 20px;
   text-align: center;
   text-decoration: none;
@@ -42,7 +40,7 @@ li a {
 
 button {
   padding: 5px;
-  font-family: 'Verdana';
+  font-family: 'Source Sans Pro';
   font-size: 10pt;
   background-color: black;
 }
@@ -53,10 +51,9 @@ button a {
 }
 
 #header {
-  background-color: black;
   height: 90px;
   width: auto;
-  padding-left: 100px;
+  padding-left: 50px;
   padding-top: 20px;
 }
 
@@ -81,15 +78,21 @@ button a {
   position: relative;
 }
 
+.bigcolumn {
+  width: 650px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  position: relative;
+}
+
 .maintext {
-  width: 60%;
   background-color: white;
   margin: 0 auto;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-family: Verdana,sans-serif;
+  font-family: "Source Sans Pro";
   font-size: 15px;
   font-style: normal;
   font-weight: normal;
@@ -97,13 +100,12 @@ button a {
 
 .graybox {
   width: 60%;
-  background-color: lightgray;
+
   margin: 0 auto;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 20px;
   padding-bottom: 20px;
-  font-family: Verdana,sans-serif;
+  font-family: "Source Sans Pro";
   font-size: 15px;
   font-style: normal;
   font-weight: normal;
