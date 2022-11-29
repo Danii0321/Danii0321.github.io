@@ -1,0 +1,112 @@
+html, body {
+margin:0;
+padding:0;
+}
+
+body {
+ background-image: url("images/grid.png");
+}
+
+h1 {
+  color: black;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 100%;
+  font-size: 20pt;
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+  align-self: right;
+  margin: 0;
+  padding: 0;
+  padding-right: 100px
+}
+
+li {
+  float: right;
+  display: inline;
+}
+
+li a {
+  font-family: 'Source Sans Pro';
+  font-size: 14pt;
+  display: block;
+  color: black;
+  padding-left: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+button {
+  padding: 5px;
+  font-family: 'Source Sans Pro';
+  font-size: 10pt;
+  background-color: black;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+#header {
+  height: 90px;
+  width: auto;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 200px;
+}
+
+/* Create equal columns that sit next to each other */
+.column {
+  width: 350px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.column img {
+  margin-top: 0px;
+  vertical-align: middle;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.bigcolumn {
+  width: 650px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  position: relative;
+}
+
+.maintext {
+  background-color: white;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Source Sans Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.graybox {
+  width: 60%;
+
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  font-family: "Source Sans Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+}
