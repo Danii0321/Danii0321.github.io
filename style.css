@@ -1,49 +1,65 @@
-html, body {
+*{
 margin:0;
 padding:0;
+list-style: none;
+text-decoration: none;
 }
 
 body {
  background-image: url("images/grid.png");
 }
 
-h1 {
-  color: black;
-  font-family: 'Roboto', sans-serif;
-  font-size: 100%;
-  font-size: 18pt;
-  float: left;
+.header{
+    width: 100%;
+    height: 90px;
+    display: block;
 }
 
-h5 {
-  color: black;
+.inner_header{
+    width: 80%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo h1{
+    color: black;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18pt;
+    font-weight: 550;
+}
+
+.nav{
+    float: right;
+    height: 100%;
+}
+
+.nav a {
   font-family: 'Roboto', sans-serif;
-  font-size: 100%;
+  color: black;
   font-size: 10pt;
+  height: 100%;
+  display: table;
   float: left;
+  padding: 0px 20px;
 }
 
-ul {
-  list-style-type: none;
-  align-self: right;
-  margin: 0;
-  padding: 0;
-  padding-right: 100px
+.nav a:last-child{
+    padding-right: 0;
 }
 
-li {
-  float: right;
-  display: inline;
-}
-
-li a {
-  font-family: 'Source Sans Pro';
-  font-size: 14pt;
-  display: block;
-  color: black;
-  padding-left: 20px;
-  text-align: center;
-  text-decoration: none;
+.nav a li{
+    display: table-cell;
+    vertical-align: middle;
 }
 
 button {
@@ -56,14 +72,6 @@ button {
 button a {
   text-decoration: none;
   color: white;
-}
-
-#header {
-  height: 90px;
-  width: auto;
-  padding-left: 100px;
-  padding-top: 20px;
-  position: relative;
 }
 
 .row {
@@ -81,6 +89,9 @@ button a {
 }
 
 .column img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0px;
   vertical-align: middle;
   margin-bottom: 50px;
