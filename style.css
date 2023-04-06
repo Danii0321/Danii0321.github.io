@@ -88,6 +88,9 @@ button a {
   position: relative;
 }
 
+.header li.active {
+}
+
 .column img {
   display: block;
   margin-left: auto;
