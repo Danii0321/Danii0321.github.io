@@ -11,7 +11,7 @@ body {
 
 .header{
     width: 100%;
-    height: 90px;
+    height: 70px;
     display: block;
 }
 
@@ -26,16 +26,7 @@ body {
     height: 100%;
     display: table;
     float: left;
-}
-
-.logo h1{
-    color: black;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18pt;
-    font-weight: 550;
+    padding-top: 15px;
 }
 
 .nav{
@@ -43,21 +34,21 @@ body {
     height: 100%;
 }
 
-.nav a {
-  font-family: 'Roboto', sans-serif;
-  color: black;
-  font-size: 10pt;
+.nav li {
   height: 100%;
   display: table;
   float: left;
   padding: 0px 20px;
 }
 
-.nav a:last-child{
+.nav li:last-child{
     padding-right: 0;
 }
 
-.nav a li{
+.nav li a{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 10pt;
     display: table-cell;
     vertical-align: middle;
 }
@@ -88,9 +79,6 @@ button a {
   position: relative;
 }
 
-.header li.active {
-}
-
 .column img {
   display: block;
   margin-left: auto;
@@ -101,35 +89,3 @@ button a {
   position: relative;
 }
 
-.bigcolumn {
-  width: 650px;
-  margin-bottom: 50px;
-  margin-right: 50px;
-  position: relative;
-}
-
-.maintext {
-  background-color: white;
-  margin: 0 auto;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-family: "Source Sans Pro";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: normal;
-}
-
-.graybox {
-  width: 60%;
-
-  margin: 0 auto;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 20px;
-  font-family: "Source Sans Pro";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: normal;
-}
