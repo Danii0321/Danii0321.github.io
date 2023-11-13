@@ -53,6 +53,13 @@ body {
     vertical-align: middle;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 12pt;
+
+}
+
 button {
   padding: 5px;
   font-family: 'Source Sans Pro';
@@ -63,6 +70,16 @@ button {
 button a {
   text-decoration: none;
   color: white;
+}
+
+.content {
+    display: block;
+    margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 200px;
+  width: 80%;
+
 }
 
 .row {
