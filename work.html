@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="description" content="Dani Rowe's portfolio">
+    <meta name="keywords" content="HTML,CSS,portfolio,art,design,dani,rowe">
+    <meta name="author" content="Dani Rowe">
+
+    <title>Dani Rowe</title>
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+          $("#header").load("header.html");
+        });
+    </script>
+
+    <style>
+        /* Extra small devices - one column */
+        @media only screen and (max-width: 600px) {.inner_header {width: 300px;}}
+
+        /* Small devices - one column */
+        @media only screen and (min-width: 600px) {.inner_header {width: 300px;}}
+
+        /* Medium devices - two columns */
+        @media only screen and (min-width: 800px) {.inner_header {width: 650px;}}
+
+        /* Large/extra large devices - three columns */
+        @media only screen and (min-width: 1080px) {.inner_header {width: 1000px;}}
+    </style>
+</head>
+
+<body>
+<div id="header"></div>
+</body>
+</html>
