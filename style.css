@@ -64,8 +64,8 @@ h2{
   top: 0;
   right: 0;
   z-index: -1;
-  top: 0%; /* change value as required */
-  right: 70%; /* change value as required */
+  top: 17%; /* change value as required */
+  right: 80%; /* change value as required */
 }
 
 .bg-shape3 {
