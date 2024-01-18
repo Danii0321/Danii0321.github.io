@@ -26,13 +26,13 @@
 
     <style>
         /* Extra small devices - one column */
-        @media only screen and (max-width: 600px) {.inner_header {width: 300px;}}
+        @media only screen and (max-width: 600px) {.inner_header {width: 200px;}}
 
         /* Small devices - one column */
-        @media only screen and (min-width: 600px) {.inner_header {width: 300px;}}
+        @media only screen and (min-width: 600px) {.inner_header {width: 200px;}}
 
         /* Medium devices - two columns */
-        @media only screen and (min-width: 800px) {.inner_header {width: 650px;}}
+        @media only screen and (min-width: 768px) {.inner_header {width: 650px;}}
 
         /* Large/extra large devices - three columns */
         @media only screen and (min-width: 1080px) {.inner_header {width: 1000px;}}
@@ -40,6 +40,31 @@
 </head>
 
 <body>
-<div id="header"></div>
+<div class="bg-shape">
+    <div id="header">
+    </div>
+
+    <!--<h1> Freelancing </h1>-->
+    <!--    <div class="container-medium">-->
+    <!--        <br>-->
+    <div class="row">
+        <div class="column">
+            <span style="width=100%">
+                <h1>Freelance Work</h1>
+                <br>
+                <h2>Alexis Strobin's Portfolio Site</h2>
+                <a href="https://www.alexisstrobin.com/" target="_blank">alexisstrobin.com</a>
+                <br>
+                <p> Coded a custom website template to fit the client's vision.
+                Worked with the client to establish their wants and needs, designed and populated site assets, launched a
+                fully functional and polished website.
+                </p>
+            </span>
+        </div>
+        <div class="content">
+            <img src="images/freelance/monitor_view.png" alt="Site Homepage Design" width=100% height=auto>
+        </div>
+    </div>
+</div>
 </body>
 </html>
