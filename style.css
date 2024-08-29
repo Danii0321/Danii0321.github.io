@@ -5,13 +5,71 @@
     text-decoration: none;
 }
 
+.bg-shape {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-shape:after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(0,0,0, 0.1);
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  top: -10%; /* change value as required */
+  right: -10%; /* change value as required */
+}
+
+.bg-shape2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-shape2:after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(0,0,0,.1);
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  top: 0%; /* change value as required */
+  right: 63%; /* change value as required */
+}
+
+.bg-shape3 {
+  position: relative;
+  padding: 0px;
+}
+
+.bg-shape3:after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(0,0,0,.1);
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  top: -20%; /* change value as required */
+  right: -20%; /* change value as required */
+}
+
 p {
     margin-top: 5px;
     font-family: 'Lato', sans-serif;
     color: black;
-    font-size: 15px;
+    font-size: 14px;
     max-width:300px;
     padding-bottom: 3px;
+    line-height: 1.5em;
 }
 
 p.active {
@@ -23,14 +81,14 @@ p.active {
 h1 {
     font-family: 'Lato', sans-serif;
     color: black;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 400;
 }
 
 h2{
       font-family: 'Lato', sans-serif;
       color: black;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 400;
       line-height: 1.5em;
 }
@@ -40,6 +98,7 @@ h3{
       color: black;
       font-size: 14px;
       font-weight: 400;
+      line-height: 1.3em;
 }
 
 body {
@@ -53,11 +112,12 @@ body {
 }
 
 .inner_header{
-    width: 90%;
+    width: 98%;
     height: 100%;
     display: block;
     margin: 0 auto;
 }
+
 .footer{
     width: 100%;
     height: 80px;
@@ -152,6 +212,7 @@ nav li a:hover{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+    max-width:300px;
 }
 
 .column span {
