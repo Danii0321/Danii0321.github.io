@@ -15,11 +15,11 @@
 }
 
 @keyframes example {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:65%; top:0px;}
+  0%   {background-color:red; left:0px; top:15%;}
+  25%  {background-color:yellow; left:65%; top:15%;}
   50%  {background-color:blue; left:65%; top:60%;}
   75%  {background-color:green; left:0px; top:60%;}
-  100% {background-color:red; left:0px; top:0px;}
+  100% {background-color:red; left:0px; top:15%;}
 }
 
 .bg-shape {
