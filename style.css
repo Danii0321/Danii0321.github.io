@@ -252,7 +252,7 @@ a:hover{
 }
 
 .after-wave {
-    background-image: linear-gradient(#017d7d80, #383838BF);
+    background-image: linear-gradient(#017d7d80, #015151B3 15%, #383838B3);
 }
 
 /* originally #67b7b780 or .5 opacity
