@@ -5,21 +5,22 @@
     text-decoration: none;
 }
 
-.first-animation {
-  width: 5px;
-  height: 5px;
-  background-color: lightblue;
-  position: relative;
-  animation-name: example;
-  animation-duration: 4s;
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: url("images/wave3.png");
+    background-size: 1000px 100px;
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 0.50;
+    animation-delay: 0s;
+    display: flex;
 }
 
-@keyframes example {
-  0%   {background-color:red; left:0px; top:15%;}
-  25%  {background-color:yellow; left:65%; top:15%;}
-  50%  {background-color:blue; left:65%; top:60%;}
-  75%  {background-color:green; left:0px; top:60%;}
-  100% {background-color:red; left:0px; top:15%;}
+@keyframes animate {
+  0%   {background-position-x: 0;}
+  100% {background-position-x: 1000px;}
 }
 
 .bg-shape {
@@ -83,16 +84,20 @@ p {
     margin-top: 5px;
     font-family: 'Lato', sans-serif;
     color: black;
-    font-size: 14px;
-    max-width:300px;
+    font-size: 15px;
     padding-bottom: 3px;
     line-height: 1.5em;
 }
 
+.column p {
+    max-width:300px;
+}
+
 p.active {
-            border-bottom-style: solid;
-            border-bottom-width: 1px;
-            width: fit-content;
+     border-bottom-style: solid;
+     border-bottom-width: 1px;
+     border-bottom-color: gray;
+     width: fit-content;
 }
 
 h1 {
@@ -173,11 +178,11 @@ body {
 
 a{
       font-family: 'Lato', sans-serif;
-      font-style: italic;
       color: black;
-      font-size: 18px;
+      font-size: 15px;
       font-weight: 400;
-      max-width:300px;
+      text-decoration: underline #9e9e9e;
+      text-decoration-thickness: 2px;
 }
 
 nav{
@@ -206,7 +211,7 @@ nav li a{
     text-decoration: none;
 }
 
-nav li a:hover{
+a:hover{
     font-style: italic;
 }
 
@@ -241,7 +246,69 @@ nav li a:hover{
 
 .content {
     width: 650px;
+    max-width: 650px;
     position: relative;
+
 }
 
+.after-wave {
+    background-image: linear-gradient(#017d7d80, #383838BF);
+}
 
+/* originally #67b7b780 or .5 opacity
+*/
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    table-layout: fixed;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    color: white;
+    font-size: 18px;
+    text-align: right;
+}
+
+table td, th {
+    padding: 15px 10px;
+    font-weight: 500;
+}
+
+.scroll-bar {
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+    transform-origin: left;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+    animation-range: cover contain;
+    scale: 0.5 1;
+    opacity: 0.5;
+}
+
+@keyframes scroll-watcher {
+    to {scale: 1 1;}
+}
+
+.bubble {
+    border-spacing: 15px
+}
+
+@media (prefers-reduced-motion: no-preference){
+.bubble td {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 50px;
+    border: 3px solid white;
+    scale: .5; opacity: 0;
+    font-weight: 700;
+    color: #5d5c5c;
+    animation: fade-in linear forwards;
+    animation-timeline: scroll();
+    animation-duration: 5s;
+}
+
+@keyframes fade-in {
+    to {scale: 1; opacity: 1;}
+}
+}
