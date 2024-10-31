@@ -5,12 +5,12 @@
     text-decoration: none;
 }
 
-.wave {
+.wave-animation {
     position: absolute;
     width: 100%;
     height: 100px;
     background: url("images/wave3.png");
-    background-size: 1000px 100px;
+    background-size: 1000px 130px;
     animation: animate 30s linear infinite;
     z-index: 1000;
     opacity: 0.50;
@@ -85,7 +85,7 @@ p {
     font-family: 'Lato', sans-serif;
     color: black;
     font-size: 15px;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
     line-height: 1.5em;
 }
 
@@ -125,7 +125,7 @@ h3{
 
 body {
    background-image: url("images/grid.png");
-    }
+}
 
 .header{
     width: 100%;
@@ -141,15 +141,10 @@ body {
 }
 
 .footer{
-    width: 100%;
     height: 80px;
-    display: block;
-    margin: 0 auto;
     padding-top:20px;
-    position:fixed;
-    background-color:white;
+    display: block;
 }
-
 
 .img-wrapper {
     width:100%;
@@ -176,6 +171,9 @@ body {
     padding-top: 15px;
 }
 
+.text-box{
+    padding-left: 25px;
+}
 a{
       font-family: 'Lato', sans-serif;
       color: black;
@@ -237,32 +235,17 @@ a:hover{
     max-width:300px;
 }
 
-.text-box{
-    display: block;
-    margin-left: 25px;
-    margin-right: auto;
-    margin-bottom: 25px;
-}
-
-.content {
-    width: 650px;
-    max-width: 650px;
-    position: relative;
-
-}
-
 .after-wave {
     background-image: linear-gradient(#017d7d80, #517C7C 20%, #3B5C5C, #2a4242);
+    margin-bottom: -1px;
+    width: 100vw;
 }
 
-/* originally #67b7b780 or .5 opacity
-
-#017d7d80, #3B5C5C, #2B4545, #424242
-*/
 table {
     margin-left: auto;
     margin-right: auto;
-    width: 650px;
+    padding:10px;
+    max-width: 650px;
     table-layout: fixed;
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -274,6 +257,7 @@ table {
 table td, th {
     padding: 15px 10px;
     font-weight: 500;
+    position: relative;
 }
 
 .scroll-bar {
@@ -284,7 +268,7 @@ table td, th {
     animation: scroll-watcher linear;
     animation-timeline: scroll();
     animation-range: cover contain;
-    scale: 0.5 1;
+    scale: 0.8 1;
     opacity: 0.5;
 }
 
@@ -293,12 +277,16 @@ table td, th {
 }
 
 .bubble {
-    border-spacing: 15px
+    border-spacing: 20px
 }
 
 @media (prefers-reduced-motion: no-preference){
 .bubble td {
     text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        color: black;
+        font-size: 16px;
     background-color: #ffffff;
     border-radius: 50px;
     border: 3px solid white;
@@ -312,5 +300,4 @@ table td, th {
 
 @keyframes fade-in {
     to {scale: 1; opacity: 1;}
-}
-}
+}}

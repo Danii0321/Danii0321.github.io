@@ -31,6 +31,11 @@
 
         /* Large/extra large devices - three columns */
         @media only screen and (min-width: 1080px) {.inner-header {width: 1000px;}}
+
+        <style>
+        /* resize p for small screens - one column */
+        @media only screen and (max-width: 500px) {.column p {width: 350px;}}
+
     </style>
 </head>
 
@@ -65,18 +70,21 @@
 </div>
 <br>
 <br>
+
 <div class="row" style="height:100px;">
-    <div class="wave">
+    <div class="wave-animation">
     </div>
 </div>
-<div class="row" style="display: inline;">
-    <div class="after-wave">
-        <div class="content" style="margin-left: auto; margin-right: auto;">
-            <h1 style="color:white; padding-top: 100px;text-align: center;">My Languages</h1>
-            <p style="color:white; padding-top:10px; font-weight: 500;">I have developed a strong foundation in programming languages through both formal education and self-teaching in my spare time, blending classroom learning with practical, self-directed exploration.</p>
+<div class="after-wave">
+<div class="row">
+        <div class="column" style="width: auto;">
+            <h1 style="text-align: center; color:white; padding-top: 100px;">My Languages</h1>
+            <p style="color: white; padding-top:10px; padding-left: 20px; padding-right: 20px; font-weight: 500; max-width:650px;">I have developed a strong foundation in programming languages through both formal education and self-teaching in my spare time, blending classroom learning with practical, self-directed exploration.</p>
             <br>
         </div>
-        <table class="scroll-chart">
+</div>
+        <div style=overflow-x:auto;">
+        <table>
             <tr>
                 <th style="text-align: left;">Language</th>
                 <th style="text-align: left;">Beginner</th>
@@ -112,14 +120,15 @@
                 <td style="text-align: left;">C</td>
                 <td colspan="2"><div class="scroll-bar"></div></td>
             </tr>
-
         </table>
-
-        <div class="content" style="margin-left: auto; margin-right: auto;">
-            <h1 style="color:white; padding-top:50px; text-align: center;">My Specialties</h1>
-            <p style="color:white; padding-top:10px;">In addition to my programming skills, I am also a skilled UX designer with experience interviewing users, creating wireframes, and refining and testing new web features. All of these principles are the building blocks for creating a final product that is well equipped to fulfill the user's needs. I have also developed strong graphic design skills in order to create websites that are both highly functional and visually appealing. </p>
-
         </div>
+
+    <div class="row">
+        <div class="column" style="width: auto;">
+            <h1 style="color:white; padding-top:50px; text-align: center;">My Specialties</h1>
+            <p style="color:white; padding:10px; padding-left: 20px; padding-right: 20px; max-width:650px;">In addition to my programming skills, I am also a skilled UX designer with experience interviewing users, creating wireframes, and refining and testing new web features. All of these principles are the building blocks for creating a final product that is well equipped to fulfill the user's needs. I have also developed strong graphic design skills in order to create websites that are both highly functional and visually appealing. </p>
+        </div>
+    </div>
         <br>
         <table class="bubble">
             <tr>
@@ -128,11 +137,15 @@
                 <td style="animation-delay: 80s;">Full Stack</td>
             </tr>
         </table>
-        <br>
-        <br><br><br><br><br><br><br><br><br><br>
+        <br> <br>
     </div>
 </div>
-
-
+    <img src="images/inv_wave.png" style="height: auto; width: 100%;">
+    <br>
+<footer>
+    <p style="margin-left: 50px; font-size: 12px; color: #525252;"> @ Dani Rowe 2024 <br> <a href="https://github.com/Danii0321/Danii0321.github.io" style="font-size: 12px; color: 525252;">github.com/Danii0321</a></p>
+    <a href="https://www.linkedin.com/in/danielle-rowe-983220156/" target="_blank"><img src="images/linkedin.png" style="margin-right: 50px; margin-top: -30px; height:30px; width:auto; float:right; border-radius: 7px;"></a>
+    <br><br>
+</footer>
 </body>
 </html>
