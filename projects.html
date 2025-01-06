@@ -18,64 +18,79 @@
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous">
     </script>
-
     <style>
-        /* Extra small devices - one column */
-        @media only screen and (max-width: 600px) {.inner-header {width: 200px;}}
+        /* resize p for small screens - one column */
+        @media only screen and (max-width: 600px) {
+            .header {
+                width: 350px;
+            }
 
-        /* Small devices - one column */
-        @media only screen and (min-width: 600px) {.inner-header {width: 200px;}}
+            .logo {
+                margin-left: auto;
+                margin-right: auto;
+                float: none;
+            }
 
-        /* Medium devices - two columns */
-        @media only screen and (min-width: 768px) {.inner-header {width: 650px;}}
+            nav {
+                float: none;
+                display: flex;
+                justify-content: center;
+            }
 
-        /* Large/extra large devices - three columns */
-        @media only screen and (min-width: 1080px) {.inner-header {width: 1000px;}}
+            .main {
+                width: 350px;
+            }
+
+        }
     </style>
 </head>
 
 <body>
 <div class="header">
-    <div class="inner-header">
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/dani_rowe.png" width=200px alt="Dani Rowe">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html"><p>Home</p></a></li>
-                <li><a href="projects.html"><p class="active">Projects</p></a></li>
-                <li><a href="gallery.html"><p>Gallery</p></a></li>
-            </ul>
-        </nav>
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/dani_rowe.png" width=200px alt="Dani Rowe">
+        </a>
     </div>
+    <nav>
+        <ul>
+            <li><a href="index.html"><p>Home</p></a></li>
+            <li><a href="projects.html"><p class="active">Projects</p></a></li>
+            <li><a href="gallery.html"><p>Gallery</p></a></li>
+        </ul>
+    </nav>
 </div>
+<!--start content-->
 
-    <div class="row" style="margin-bottom: 50px;">
+<div class="main" style="padding-top: 50px;">
+    <div class="row">
         <div class="column">
                 <br>
                 <h1>Alexis Strobin's Portfolio Site</h1>
                 <a href="https://www.alexisstrobin.com/" target="_blank" style="text-decoration: underline 0.5px;">alexisstrobin.com</a>
                 <br><br>
                 <p> Coded a custom website template to fit the client's vision.
-                Worked with the client to establish their wants and needs, designed and populated site assets, launched a
-                fully functional and polished website.
+                    Worked with the client to establish their wants and needs, designed and populated site assets,
+                    launched a
+                    fully functional and polished website.
                 </p>
-        </div>
-        <div class="column" style="width: 650px;">
-            <img src="images/freelance/monitor_view.png" alt="Site Homepage Design" width=100% height=auto style="max-width:650px;">
+            </div>
+        <div class="column" style="width: 66%;">
+            <img src="images/freelance/monitor_view.png" alt="Site Homepage Design" width=100% height=auto
+                 style="max-width:650px;">
         </div>
     </div>
+    <br><br><br>
 
     <div class="row">
         <div class="column">
-            <h2>Project Pages</h2>
-            <p> Designed and built pages for each project featured on the site's homepage. Created assets to display
-                the website view of the final product, highlighting how the client's copywriting was incorporated
-                into the work.
-            </p>
-        </div>
+                <h2>Project Pages</h2>
+                <p> Designed and built pages for each project featured on the site's homepage. Created assets to display
+                    the website view of the final product, highlighting how the client's copywriting was incorporated
+                    into the work.
+                </p>
+            </div>
+
         <div class="column">
             <img src="images/freelance/meta.png" alt="Meta Project Page Design" width=95% height=auto
                  style="border-radius: 10px; max-width:350px;">
@@ -86,44 +101,41 @@
         </div>
     </div>
 
-<div class="row">
-    <div class="column">
-        <h2>Design Process</h2>
-        <p> Collaborated with the client to establish a vision for the site. Created a color palette, chose fonts, drafted
-            an outline of the pages, and planned how the user would navigate between project pages.
-        </p>
-    </div>
-    <div class="column">
-        <br><Br>
-        <img src="images/swatches.png" alt="Color scheme swatches" style="margin-bottom: 0px;">
-    </div>
-    <div class="column" style="margin-bottom: 100px;">
-        <br><Br>
-        <h2 style="font-weight: 500;">"This time around, the overall theme is minimalism - let the work speak for itself.
-            I want it to be easy for recruiters to navigate and understand!" <br>
-            <i>— Client's vision</i></h2>
+
+    <div class="row">
+        <div class="column">
+                <h2>Design Process</h2>
+                <p> Collaborated with the client to establish a vision for the site. Created a color palette, chose
+                    fonts, drafted
+                    an outline of the pages, and planned how the user would navigate between project pages.
+                </p>
+            </div>
+        <div class="column">
+            <br><br>
+            <img src="images/swatches.png" alt="Color scheme swatches" style="margin-bottom: 0px;">
+        </div>
+        <div class="column" style="margin-bottom: 100px;">
+            <div class="column-text" style="padding-left:20px; padding-right:0px;">
+                <br><br>
+                <h2 style="font-weight: 500;">"This time around, the overall theme is minimalism - let the work speak
+                    for itself.
+                    I want it to be easy for recruiters to navigate and understand!" <br>
+                    <i>— Client's vision</i></h2>
+            </div>
+        </div>
     </div>
 </div>
 
-<!--<div class="row">-->
-<!--    <div class="column" style="width: auto; margin:auto; margin-bottom: 80px;">-->
-<!--        <img src="images/spiral-arrow.png" style="margin-left: auto; margin-right:auto; width:50px; opacity: 0.5; margin-bottom:20px;" alt="Down arrow">-->
-<!--        <h2 style="text-align: center;">Additional Work</h2>-->
-<!--        <p style="padding-left: 20px; padding-right: 20px; font-weight: 500; max-width:650px;">-->
-<!--            Much of my work in previous roles has been dedicated to redesigning and creating-->
-<!--            internal websites for companies such as Amazon Robotics, Merck, and Local Wisdom. Some of my other work with-->
-<!--            clients has fallen under the umbrella of confidentiality as well. Please <a href="https://www.linkedin.com/in/danielle-rowe-983220156/" target="_blank">contact me</a> to learn more about-->
-<!--            my other work!</p>-->
-<!--            <br>-->
-<!--    </div>-->
-<!--</div>-->
-
-
 <img src="images/wave.png" width="100%">
 <footer style="background-color: lightgray; margin-top: -10px;">
-    <p style="margin-left: 50px; font-size: 12px;"> @ Dani Rowe 2024 <br> <a href="https://github.com/Danii0321/Danii0321.github.io" style="font-size: 12px;">github.com/Danii0321</a></p>
-    <a href="https://www.linkedin.com/in/danielle-rowe-983220156/" target="_blank"><img src="images/linkedin2.png" style="margin-right: 50px; margin-top: -30px; height:30px; width:auto; float:right; border-radius: 7px;"></a>
-    <br><br>
+    <div class="inner-footer">
+        <p style="margin-left: 50px; font-size: 12px;"> @ Dani Rowe 2024 <br> <a
+                href="https://github.com/Danii0321/Danii0321.github.io"
+                style="font-size: 12px;">github.com/Danii0321</a></p>
+        <a href="https://www.linkedin.com/in/danielle-rowe-983220156/" target="_blank"><img src="images/linkedin2.png"
+                                                                                            style="margin-right: 50px; margin-top: -30px; height:30px; width:auto; float:right; border-radius: 7px;"></a>
+        <br><br>
+    </div>
 </footer>
 </body>
 </html>

@@ -2,10 +2,9 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
-    <meta name="description" content="Dani Rowe's portfolio of design work and coding projects">
-    <meta name="keywords" content="portfolio,software,developer,coding,ux,ui,art,design,designer,HTML,CSS,dani,rowe">
-    <meta name="author" content="Dani Rowe">
-    <meta name="image" content="images/dani_rowe.png"/>
+    <meta name="description" content="The Creative Portfolio of Danielle Rowe: UX Design and Code">
+    <meta name="keywords" content="portfolio,software,developer,design,UX,UI,HCI,art,design,designer,HTML,CSS,dani,danielle,rowe,user,experience,interface,interaction">
+    <meta name="author" content="Danielle Rowe">
 
     <title>Dani Rowe Design</title>
 
@@ -19,68 +18,151 @@
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous">
     </script>
-    <!--    <script>-->
-    <!--        $(function(){-->
-    <!--          $("#header").load("header.html");-->
-    <!--        });-->
-    <!--    </script>-->
 
-    <!--    <style>-->
-    <!--        /* Extra small devices - one column */-->
-    <!--        @media only screen and (max-width: 600px) {.inner_header {width: 200px;}}-->
-    <!--    -->
-    <!--        /* Small devices - one column */-->
-    <!--        @media only screen and (min-width: 600px) {.inner_header {width: 200px;}}-->
-    <!--    -->
-    <!--        /* Medium devices - two columns */-->
-    <!--        @media only screen and (min-width: 768px) {.inner_header {width: 650px;}}-->
-    <!--    -->
-    <!--        /* Large/extra large devices - three columns */-->
-    <!--        @media only screen and (min-width: 1080px) {.inner_header {width: 1000px;}}-->
-    <!--    </style>-->
+    <style>
+        /* resize p for small screens - one column */
+        @media only screen and (max-width: 600px) {
+            .header {
+                width: 350px;
+            }
+
+            .logo {
+                margin-left: auto;
+                margin-right: auto;
+                float: none;
+            }
+
+            nav {
+                float: none;
+                display: flex;
+                justify-content: center;
+            }
+
+            .main {
+                width: 350px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 <div class="header">
-    <div class="inner_header">
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/dani_rowe.png" width=200px alt="Dani Rowe">
-            </a>
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/dani_rowe.png" width=200px alt="Dani Rowe">
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html"><p class="active">Home</p></a></li>
+            <li><a href="projects.html"><p>Projects</p></a></li>
+            <li><a href="gallery.html"><p>Gallery</p></a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="main">
+    <div class="centered-content">
+        <h1>Hello & Welcome to My Personal Website!</h1>
+        <p>I designed and built everything you see here
+            from scratch using HTML, CSS, and JavaScript. <br>Explore behind the screen on my
+            <a href="https://github.com/Danii0321/Danii0321.github.io">GitHub account.</a>
+        </p>
+        <br>
+        <br>
+        <br>
+        <div class="down-arrow">
+            <img src="images/down-arrow.png" style="height:20px; width:auto;">
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html"><p class="active">Home</p></a></li>
-                <li><a href="featured_work.html"><p>Projects</p></a></li>
-                <li><a href="design.html"><p>Gallery</p></a></li>
-            </ul>
-        </nav>
+        <!--        <br>
+                <h2 style="text-align: center;"> <i>Dive In!</i></h2>
+                <img src="images/spiral-arrow.png" style="margin-left: auto; margin-right:auto; width:50px; opacity: 0.5;" alt="Down arrow">
+                <br>-->
+
+        <!--        <br>
+                    <div class="arrow arrow-first"></div>
+                    <div class="arrow arrow-second"></div>
+                <br>-->
     </div>
 </div>
 
-<div id="myDiv" class="img-wrapper">
-    <img src="images/dani_theme.png" style="width:90%; display: block; margin: 0 auto;"/>
-</div>
-<br>
-<br>
+<!--<div class="row" style="height:100px;">-->
+<!--    <div class="wave-animation">-->
+<!--    </div>-->
+<!--</div>-->
+<!--<div class="after-wave">-->
+<!--<div class="row">-->
+<!--        <div class="column" style="width: auto;">-->
+<!--            <h1 style="text-align: center; color:white; padding-top: 100px;">My Languages</h1>-->
+<!--            <p style="color: white; padding-top:10px; padding-left: 20px; padding-right: 20px; font-weight: 500; max-width:650px;">I have developed a strong foundation in programming languages through both formal education and self-teaching in my spare time, blending classroom learning with practical, self-directed exploration.</p>-->
+<!--            <br>-->
+<!--        </div>-->
+<!--</div>-->
+<!--        <div style=overflow-x:auto;">-->
+<!--        <table>-->
+<!--            <tr>-->
+<!--                <th style="text-align: left;">Language</th>-->
+<!--                <th style="text-align: left;">Beginner</th>-->
+<!--                <th>Intermediate</th>-->
+<!--                <th>Advanced</th>-->
+<!--                <th>Expert</th>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td style="text-align: left;">HTML</td>-->
+<!--                <td colspan="4"><div class="scroll-bar"></div></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td style="text-align: left;">CSS</td>-->
+<!--                <td colspan="4"><div class="scroll-bar"></div></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td style="text-align: left;">Java</td>-->
+<!--                <td colspan="3"><div class="scroll-bar"></div></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td style="text-align: left;">Python</td>-->
+<!--                <td colspan="3"><div class="scroll-bar"></div></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td style="text-align: left;">JavaScript</td>-->
+<!--                <td colspan="3"><div class="scroll-bar"></div></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td style="text-align: left;">React.JS</td>-->
+<!--                <td colspan="2"><div class="scroll-bar"></div></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td style="text-align: left;">C</td>-->
+<!--                <td colspan="2"><div class="scroll-bar"></div></td>-->
+<!--            </tr>-->
+<!--        </table>-->
+<!--        </div>-->
 
-<div class="row">
-    <div class="column" style="width: max(40%, 350px);">
-            <span style="margin-bottom:25px;text-align:center;">
-            <h1>Behind the Screens</h1>
-                <br>
-                <h2> Welcome to my personal website! Initially created as a sandbox for web
-                    development practice, I have maintained and updated this domain over the course of five years.
-                    Coded in HTML, CSS, and JavaScript, and hosted on my GitHub account.</h2>
-                <br>
-                <br>
-            </span>
-    </div>
-</div>
-<!--    <div class="footer">-->
-<!--        <div class="inner_footer">-->
-<!--        <h3>Dani Rowe</h3>-->
+<!--    <div class="row">-->
+<!--        <div class="column" style="width: auto;">-->
+<!--            <h1 style="color:white; padding-top:50px; text-align: center;">My Specialties</h1>-->
+<!--            <p style="color:white; padding:10px; padding-left: 20px; padding-right: 20px; max-width:650px;">In addition to my programming skills, I am also a skilled UX designer with experience interviewing users, creating wireframes, and refining and testing new web features. All of these principles are the building blocks for creating a final product that is well equipped to fulfill the user's needs. I have also developed strong graphic design skills in order to create websites that are both highly functional and visually appealing. </p>-->
 <!--        </div>-->
 <!--    </div>-->
+<!--        <br>-->
+<!--        <table class="bubble">-->
+<!--            <tr>-->
+<!--                <td style="animation-delay: 10s;">UI/UX Design</td>-->
+<!--                <td style="animation-delay: 30s;">Front-End</td>-->
+<!--                <td style="animation-delay: 80s;">Full Stack</td>-->
+<!--            </tr>-->
+<!--        </table>-->
+<!--        <br> <br>-->
+<!--    </div>-->
+
+<!--<img src="images/wave.png" style="width:100%">-->
+<!--<div class="footer">-->
+<!--    <div class="inner-footer">-->
+<!--        <p style="font-size: 12px; display:table; float:left"> @ Dani Rowe 2024 <br> <a href="https://github.com/Danii0321/Danii0321.github.io" style="font-size: 12px; color: 525252;">github.com/Danii0321</a></p>-->
+<!--        <a href="https://www.linkedin.com/in/danielle-rowe-983220156/" target="_blank"><img src="images/linkedin2.png" style="display:block; width: 30px; height: auto; float:right; border-radius: 2px;"></a>-->
+<!--        <br><br>-->
+<!--    </div>-->
+<!--</div>-->
+
 </body>
 </html>
