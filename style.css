@@ -31,7 +31,7 @@ h3 {
     color: black;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.3em;
+    line-height: 2em;
 }
 
 p {
@@ -129,11 +129,11 @@ p.active {
 .column {
     width: 33%;
     position: relative;
-    min-width: 250px;
+    min-width: 200px;
 }
 
 .column p {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     padding-right: 25px;
 }
 
@@ -147,6 +147,10 @@ p.active {
 }
 
 .text-box {
+    padding-left: 10px;
+/*    padding-left: 50px;
+    padding-right:50px;
+    min-width: 300px;*/
 
 }
 
@@ -217,8 +221,11 @@ p.active {
   font-size: 16px;
       scale: .5; opacity: 0;
       animation: fade-in linear forwards;
-      animation-timeline: scroll();
+  /*    animation-timeline: scroll();*/
       animation-duration: 5s;
+          animation-timeline: view();
+          animation-range-start: cover;
+          animation-range-end: 40vh;
 }
 
 /*.bubble {
@@ -251,7 +258,7 @@ p.active {
 /* =======================================================
     Shapes
 ========================================================== */
-.bg-shape {
+/*.bg-shape {
   position: relative;
   overflow: hidden;
 }
@@ -266,8 +273,8 @@ p.active {
   top: 0;
   right: 0;
   z-index: -1;
-  top: -10%; /* change value as required */
-  right: -10%; /* change value as required */
+  top: -10%; *//* change value as required *//*
+  right: -10%; *//* change value as required *//*
 }
 
 .bg-shape2 {
@@ -285,8 +292,8 @@ p.active {
   top: 0;
   right: 0;
   z-index: -1;
-  top: 0%; /* change value as required */
-  right: 63%; /* change value as required */
+  top: 0%; *//* change value as required *//*
+  right: 63%; *//* change value as required *//*
 }
 
 .bg-shape3 {
@@ -304,9 +311,9 @@ p.active {
   top: 0;
   right: 0;
   z-index: -1;
-  top: -20%; /* change value as required */
-  right: -20%; /* change value as required */
-}
+  top: -20%; *//* change value as required *//*
+  right: -20%; *//* change value as required *//*
+}*/
 
 /* =======================================================
     Code Graveyard (Super Haunted)
