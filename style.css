@@ -214,18 +214,19 @@ p.active {
   display: inline-block;
   font-family: 'Lato', sans-serif;
   color: white;
-  padding: 8px 20px;
+  padding: 8px 15px;
   border-radius: 25px;
   background-color: #A9A9A9;
-  margin-top: 8px;
+  margin-right: 10px;
+  margin-bottom:5px;
   font-size: 16px;
-      scale: .5; opacity: 0;
-      animation: fade-in linear forwards;
-  /*    animation-timeline: scroll();*/
-      animation-duration: 5s;
-          animation-timeline: view();
-          animation-range-start: cover;
-          animation-range-end: 40vh;
+/*      scale: .5; opacity: 0;*/
+/*      animation: fade-in linear forwards;*/
+/*    animation-timeline: scroll();*/
+  animation-duration: 5s;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 40vh;
 }
 
 /*.bubble {
