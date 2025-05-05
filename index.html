@@ -22,12 +22,14 @@
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
 
     <!-- Load Fonts & JQuery -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
+    </noscript>
     <script>
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -123,11 +125,11 @@
     <div class="scroll-into-view">
     <div class="row">
             <div class="column" style="width: 33%;">
-                <img src="images/dani.jpg" style="border-radius:100%;" alt="My profile picture">
+                <img src="images/dani.jpg" style="border-radius:100%; width:80%;" alt="My profile picture">
             </div>
         <!--what should the width be?-->
             <div class="column" style="width:66%;">
-                <div class="text-box" style="padding-left:25px;">
+                <div class="text-box" style="padding-left:45px;">
                     <h1>About Me</h1>
                     <br>
                     <p style="padding-bottom: 0px;"> Hi, I'm Dani! I'm a software developer and user experience designer. I specialize in creating
@@ -135,9 +137,7 @@
                         Whether I'm building seamless applications or crafting user-centric interfaces, I strive to make
                         technology more accessible and enjoyable for everyone. <br><br>
                         Alongside my work in software development and UX design, I’m a dedicated freelancer, collaborating with
-                        clients to bring their ideas to life through clean code and thoughtful design solutions.
-                        Outside of tech, I’m an avid painter, drawer, and knitter—constantly inspired by my love for art and
-                        creativity.
+                        clients to bring their ideas to life through clean code and thoughtful designs.
                     </p>
                 </div>
             </div>
@@ -145,58 +145,45 @@
     </div>
 </div>
 
-<div class="main">
+<div class="main" style="padding-top: 100px;">
     <div class="scroll-into-view">
         <div class="row">
             <div class="column" style="width: 66%;">
-                <div class="text-box" style="padding-left:25px;">
+                <div class="text-box" style="padding-right:45px;">
                     <h1>Software Development</h1>
                     <br>
                     <p> I have been studying programming languages both in and out of school since 2016,
                         beginning with my interest in HTML and CSS for web development. I attended Northeastern
-                        University for Computer Science and built
-                        a strong foundation in Object-Oriented Programming (OOP), graduating in 2022. I gained experience in many areas, creating robust programs, designing responsive
-                        websites, and building and maintaining relational databases. I was able to expand my
-                        learning outside the classroom through my internships and six month long co-op opportunities,
+                        University, earning a Bachelor's Degree in Computer Science with a Minor in Experience Design in 2022.
+                        <br><br>I was able to expand my learning outside the classroom through my internships and co-op opportunities,
                         taking the incentive to learn new programming languages (Python, Javascript) and explore
-                        related fields (UX design, Data Visualization).
-
-                       <br><br>
-                        My Programming Languages:
+                        related fields (UX Design, Data Visualization).
                     </p>
-
-                    <span class="tag-cloud" style="animation-delay: 0s;">Java</span>
-                    <span class="tag-cloud" style="animation-delay: 1s;">Python</span>
-                    <span class="tag-cloud" style="animation-delay: 2s;">HTML</span>
-                    <span class="tag-cloud" style="animation-delay: 3s;">CSS</span>
-                    <span class="tag-cloud" style="animation-delay: 4s;">JavaScript</span>
-                    <span class="tag-cloud" style="animation-delay: 5s;">SQL</span>
-                    <span class="tag-cloud" style="animation-delay: 6s;">C</span>
                 </div>
             </div>
             <div class="column" style="width: 33%;">
-                <img src="images/code-bg.png" style="border-radius:100%;" alt="Code">
+                <img src="images/code-bg.png" style="border-radius:100%; width:80%;" alt="Code Snippets">
             </div>
         </div>
     </div>
 </div>
 
-<div class="main" style="padding-top: 150px; padding-bottom: 50px;">
+<div class="main" style="padding-top: 100px; padding-bottom: 50px;">
     <div class="scroll-into-view">
         <div class="row">
             <div class="column" style="width: 33%;">
-                <img src="images/Type3.jpg" style="border-radius:100%;" alt="Typography">
+                <img src="images/Type3.jpg" style="width:80%; border-radius:100%;" alt="Typography">
             </div>
             <!--what should the width be?-->
             <div class="column" style="width:66%;">
-                <div class="text-box" style="padding-left:25px;">
+                <div class="text-box" style="padding-left:45px;">
                     <h1>Design</h1>
                     <br>
                     <p> In university, I continued my passion for art by incorporating multiple areas of
                         design into my curriculum. I began by learning digital tools (Photoshop, Illustrator, Figma)
                         and the fundamentals of graphic design. I then broadened my understanding by studying
                         typography, and began to combine all my digital design skills with my background in coding.
-                        In my later years, I directed my focus onto the area of Human-Computer Interaction (HCI)
+                        <br><br>In my later years, I directed my focus onto the area of Human-Computer Interaction (HCI)
                         and responsive website design, culminating in a minor in User Experience Design.
                     </p>
                 </div>
