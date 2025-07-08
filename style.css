@@ -192,6 +192,7 @@ nav li a:hover{
     background-color: #53b7ae;
 }
 
+
 /*#topButton {
   display: none; *//* Hidden by default *//*
   position: sticky; *//* Fixed/sticky position *//*
@@ -213,25 +214,28 @@ nav li a:hover{
     Resizing for Mobile
 ========================================================== */
     @media only screen and (max-width: 700px) {
-
         .column, .column-medium, .column-large {
             width: 90%;
         }
 
+        /* Display mobile view column */
         .column-mobile{
             display: block;
             width: 90%;
         }
 
+        /* Hide desktop view column */
         .column-desktop {
             display: none;
         }
 
+        /* Show row spacer for mobile */
         .row-spacer{
            display: block;
         }
 
-        .spacer{
+        /* Hide vertical spacer on desktop view */
+        .spacer {
             display: none;
         }
 
@@ -269,14 +273,6 @@ nav li a:hover{
 .footer{
     background-color: lightgray;
     width: 80%;
-}
-
-.inner-footer {
-    display: block;
-    width: 80%;
-    margin: auto;
-    height: 80px;
-    padding-top:10px;
 }
 
 /* =======================================================
